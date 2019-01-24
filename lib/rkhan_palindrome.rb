@@ -2,7 +2,7 @@ require "rkhan_palindrome/version"
 
 module RKhanModulePalindrome
   def palindrome?
-    processed_content == processed_content.reverse
+    processed_content == processed_content.reverse if !processed_content.empty?
   end
 
   private
